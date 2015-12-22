@@ -6,7 +6,7 @@ namespace PlayMe.Web.Code
     {
         public string GetCurrentIdentityName()
         {
-            return HttpContext.Current.User.Identity.Name;
+            return HttpContext.Current.Request.UserHostName;
         }
     }
 }
